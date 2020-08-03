@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ChartDataSets, ChartOptions, ChartType } from 'chart.js';
 import { Color, Label } from 'ng2-charts';
-import { SalesService } from 'src/app/sales/sales.service';
 
 @Component({
   selector: 'app-annual-sales-chart',
@@ -29,7 +28,7 @@ export class AnnualSalesChartComponent implements OnInit {
 
   public salesChartLabels: Label[] = [];
 
-  constructor(private salesService: SalesService) { }
+  constructor() { }
 
   ngOnInit() {
   }
